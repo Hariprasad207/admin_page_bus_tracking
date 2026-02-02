@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RIT Transport Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>🚌 RIT Transport Admin</h2>
+
+    <div id="loginBox">
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="error" style="color:red;"></p>
+    </div>
+
+    <div id="adminPanel" hidden>
+        <h3>Admin Panel</h3>
+
+        <input id="busId" placeholder="Bus ID (R01)">
+        <button onclick="createBus()">Create Bus</button>
+
+        <br><br>
+
+        <select id="busSelect" onchange="loadStops()"></select>
+        <h3>Bus Status</h3>
+        <select id="busStatus" onchange="updateBusStatus()">
+            <option value="true">Yes (Active)</option>
+            <option value="false">No (Inactive)</option>
+        </select>
+
+
+        <h4>Add Stop</h4>
+        <input id="stopName" placeholder="Stop Name">
+        <input id="lat" placeholder="Latitude">
+        <input id="lng" placeholder="Longitude">
+        <input id="order" placeholder="Stop Order">
+        <button onclick="addStop()">Add Stop</button>
+
+        <ul id="stopList"></ul>
+
+        <br>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
