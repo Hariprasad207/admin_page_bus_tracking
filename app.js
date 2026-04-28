@@ -4,8 +4,8 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 /* 🔐 FIXED ADMIN CREDENTIALS */
-const ADMIN_USER = "RITTRANSPORT";
-const ADMIN_PASS = "RIT@1234";
+const ADMIN_USER = "";
+const ADMIN_PASS = "";
 
 /* 🔥 FIREBASE CONFIG */
 const firebaseConfig = {
