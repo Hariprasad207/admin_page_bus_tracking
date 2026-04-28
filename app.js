@@ -9,7 +9,7 @@ const ADMIN_PASS = "";
 
 /* 🔥 FIREBASE CONFIG */
 const firebaseConfig = {
-    apiKey: "AIzaSyDkDltTMpyKwDJxKSep777PTyFs7Ia40do",
+    apiKey: "",
     authDomain: "bus-tracking-51437.firebaseapp.com",
     projectId: "bus-tracking-51437",
 };
